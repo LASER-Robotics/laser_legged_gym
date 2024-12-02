@@ -39,28 +39,28 @@ class GuaraciRoughCfg( LeggedRobotCfg ):
         mesh_type = 'trimesh'
 
     class init_state( LeggedRobotCfg.init_state ):
-        pos = [0.0, 0.0, 0.18] # x,y,z [m]
+        pos = [0.0, 0.0, 0.2] # x,y,z [m]
         default_joint_angles = { # = target angles [rad] when action = 0.0
-            "coxa_r1": 0.0,
-            "coxa_r2": 0.0,
-            "coxa_r3": 0.0,
-            "coxa_l1": 0.0,
-            "coxa_l2": 0.0,
-            "coxa_l3": 0.0,
+            "joint_coxa_r1": 0.0,
+            "joint_coxa_r2": 0.0,
+            "joint_coxa_r3": 0.0,
+            "joint_coxa_l1": 0.0,
+            "joint_coxa_l2": 0.0,
+            "joint_coxa_l3": 0.0,
 
-            "femur_r1": 0.368,
-            "femur_r2": 0.368,
-            "femur_r3": 0.368,
-            "femur_l1": 0.368,
-            "femur_l2": 0.368,
-            "femur_l3": 0.368,
+            "joint_femur_r1": -0.368,
+            "joint_femur_r2": -0.368,
+            "joint_femur_r3": -0.368,
+            "joint_femur_l1": -0.368,
+            "joint_femur_l2": -0.368,
+            "joint_femur_l3": -0.368,
 
-            "tibia_r1": -2.043,
-            "tibia_r2": -2.043,
-            "tibia_r3": -2.043,
-            "tibia_l1": -2.043,
-            "tibia_l2": -2.043,
-            "tibia_l3": -2.043,
+            "joint_tibia_r1": 2.043,
+            "joint_tibia_r2": 2.043,
+            "joint_tibia_r3": 2.043,
+            "joint_tibia_l1": 2.043,
+            "joint_tibia_l2": 2.043,
+            "joint_tibia_l3": 2.043,
         }
 
     class control( LeggedRobotCfg.control ):
@@ -87,8 +87,8 @@ class GuaraciRoughCfg( LeggedRobotCfg ):
         added_mass_range = [-5., 5.]
   
     class rewards( LeggedRobotCfg.rewards ):
-        base_height_target = 0.5
-        max_contact_force = 500.
+        base_height_target = 0.2
+        max_contact_force = 300.
         only_positive_rewards = True
         class scales( LeggedRobotCfg.rewards.scales ):
             pass

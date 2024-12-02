@@ -32,7 +32,7 @@ from legged_gym.envs import GuaraciRoughCfg, GuaraciRoughCfgPPO
 
 class GuaraciFlatCfg( GuaraciRoughCfg ):
     class env( GuaraciRoughCfg.env ):
-        num_observations = 48
+        num_observations = 66
   
     class terrain( GuaraciRoughCfg.terrain ):
         mesh_type = 'plane'
