@@ -44,6 +44,8 @@ import os
 
 from legged_gym.utils.task_registry import task_registry
 
+task_registry.register( "guaraci_rough", Guaraci, GuaraciRoughCfg(), GuaraciRoughCfgPPO() )
+task_registry.register( "guaraci_flat", Guaraci, GuaraciFlatCfg(), GuaraciFlatCfgPPO() )
 task_registry.register( "anymal_c_rough", Anymal, AnymalCRoughCfg(), AnymalCRoughCfgPPO() )
 task_registry.register( "anymal_c_flat", Anymal, AnymalCFlatCfg(), AnymalCFlatCfgPPO() )
 task_registry.register( "anymal_b", Anymal, AnymalBRoughCfg(), AnymalBRoughCfgPPO() )
