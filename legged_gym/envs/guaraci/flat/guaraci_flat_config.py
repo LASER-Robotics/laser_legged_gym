@@ -39,10 +39,10 @@ class GuaraciFlatCfg( GuaraciRoughCfg ):
         measure_heights = False
   
     class asset( GuaraciRoughCfg.asset ):
-        self_collisions = 0 # 1 to disable, 0 to enable...bitwise filter
+        pass
 
     class rewards( GuaraciRoughCfg.rewards ):
-        max_contact_force = 350.
+        max_contact_force = 650.
         class scales ( GuaraciRoughCfg.rewards.scales ):
             orientation = -5.0
             torques = -0.000025
@@ -52,20 +52,19 @@ class GuaraciFlatCfg( GuaraciRoughCfg ):
     class commands( GuaraciRoughCfg.commands ):
         heading_command = False
         resampling_time = 4.
-        class ranges( GuaraciRoughCfg.commands.ranges ):
-            ang_vel_yaw = [-1.5, 1.5]
 
     class domain_rand( GuaraciRoughCfg.domain_rand ):
         friction_range = [0., 1.5] # on ground planes the friction combination mode is averaging, i.e total friction = (foot_friction + 1.)/2.
 
 class GuaraciFlatCfgPPO( GuaraciRoughCfgPPO ):
     class policy( GuaraciRoughCfgPPO.policy ):
-        actor_hidden_dims = [128, 64, 32]
-        critic_hidden_dims = [128, 64, 32]
-        activation = 'elu' # can be elu, relu, selu, crelu, lrelu, tanh, sigmoid
+        pass
+        # actor_hidden_dims = [128, 64, 32]
+        # critic_hidden_dims = [128, 64, 32]
+        # activation = 'elu' # can be elu, relu, selu, crelu, lrelu, tanh, sigmoid
 
-    class algorithm( GuaraciRoughCfgPPO.algorithm):
-        entropy_coef = 0.01
+    # class algorithm( GuaraciRoughCfgPPO.algorithm):
+    #     entropy_coef = 0.01
 
     class runner ( GuaraciRoughCfgPPO.runner):
         run_name = ''

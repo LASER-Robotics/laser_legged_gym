@@ -12,7 +12,7 @@
     </visual>
     <collision>
       <!-- <origin rpy="0 0 1.5707" xyz="0 0 0" /> -->
-      <origin rpy="1.5707 0 1.5707" xyz="0 0 0" />
+      <origin rpy="0 0 1.5707" xyz="0 0 0" />
       <geometry>
         <mesh filename="../meshes/body100.dae" scale="0.001 0.001 0.001"/>
       </geometry>
@@ -31,13 +31,13 @@
       <inertia ixx="0.00055" ixy="0" ixz="0" iyy="0.00124" iyz="0" izx="0" izz="0.00155"/>
     </inertial>
     <collision>
-      <origin rpy="0 0 3.14159" xyz="0 0 0" />
+      <origin rpy="0 0 4.71229" xyz="0 0 0" />
       <geometry>
         <mesh filename="../meshes/coxa.dae" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
     <visual>
-      <origin rpy="0 0 3.14159" xyz="0 0 0" />
+      <origin rpy="0 0 4.71229" xyz="0 0 0" />
       <geometry>
         <mesh filename="../meshes/coxa.dae" scale="0.001 0.001 0.001"/>
       </geometry>
@@ -47,9 +47,9 @@
   <joint name="joint_coxa_r1" type="revolute">
     <parent link="base" />
     <child link="coxa_r1" />
-    <origin rpy="3.14159 0 0.7854" xyz="0.17302 0.10517 0" />
+    <origin rpy="3.14159 0 2.35605" xyz="0.17302 0.10517 0" />
     <axis xyz="0 0 1"/>
-    <limit effort="25.0" lower="-3.14159" upper="3.14159" velocity="0.5"/>
+    <limit effort="80.0" lower="-3.14159" upper="3.14159" velocity="20.0"/>
   </joint>
 
   <link name="coxa_r2">
@@ -59,13 +59,13 @@
       <inertia ixx="0.00055" ixy="0" ixz="0" iyy="0.00124" iyz="0" izx="0" izz="0.00155"/>
     </inertial>
     <collision>
-      <origin rpy="0 0 3.14159" xyz="0 0 0" />
+      <origin rpy="0 0 4.71229" xyz="0 0 0" />
       <geometry>
         <mesh filename="../meshes/coxa.dae" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
     <visual>
-      <origin rpy="0 0 3.14159" xyz="0 0 0" />
+      <origin rpy="0 0 4.71229" xyz="0 0 0" />
       <geometry>
         <mesh filename="../meshes/coxa.dae" scale="0.001 0.001 0.001"/>
       </geometry>
@@ -75,9 +75,9 @@
   <joint name="joint_coxa_r2" type="revolute">
     <parent link="base" />
     <child link="coxa_r2" />
-    <origin rpy="3.14159 0 1.5707" xyz="0 0.169 0" />
+    <origin rpy="3.14159 0 3.14159" xyz="0 0.169 0" />
     <axis xyz="0 0 1"/>
-    <limit effort="25.0" lower="-3.14159" upper="3.14159" velocity="0.5"/>
+    <limit effort="80.0" lower="-3.14159" upper="3.14159" velocity="20.0"/>
   </joint>
 
   <link name="coxa_r3">
@@ -87,13 +87,13 @@
       <inertia ixx="0.00055" ixy="0" ixz="0" iyy="0.00124" iyz="0" izx="0" izz="0.00155"/>
     </inertial>
     <collision>
-      <origin rpy="0 0 3.14159" xyz="0 0 0" />
+      <origin rpy="0 0 -1.5707" xyz="0 0 0" />
       <geometry>
         <mesh filename="../meshes/coxa.dae" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
     <visual>
-      <origin rpy="0 0 3.14159" xyz="0 0 0" />
+      <origin rpy="0 0 -1.5707" xyz="0 0 0" />
       <geometry>
         <mesh filename="../meshes/coxa.dae" scale="0.001 0.001 0.001"/>
       </geometry>
@@ -103,9 +103,9 @@
   <joint name="joint_coxa_r3" type="revolute">
     <parent link="base" />
     <child link="coxa_r3" />
-    <origin rpy="3.14159 0 2.3561" xyz="-0.17302 0.10517 0" />
+    <origin rpy="3.14159 0 3.92694" xyz="-0.17302 0.10517 0" />
     <axis xyz="0 0 1"/>
-    <limit effort="25.0" lower="-3.14159" upper="3.14159" velocity="0.5"/>
+    <limit effort="80.0" lower="-3.14159" upper="3.14159" velocity="20.0"/>
   </joint>
 
   <link name="coxa_l1">
@@ -115,13 +115,13 @@
       <inertia ixx="0.00055" ixy="0" ixz="0" iyy="0.00124" iyz="0" izx="0" izz="0.00155"/>
     </inertial>
     <collision>
-      <origin rpy="0 0 3.14159" xyz="0 0 0" />
+      <origin rpy="0 0 4.71229" xyz="0 0 0" />
       <geometry>
         <mesh filename="../meshes/coxa.dae" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
     <visual>
-      <origin rpy="0 0 3.14159" xyz="0 0 0" />
+      <origin rpy="0 0 4.71229" xyz="0 0 0" />
       <geometry>
         <mesh filename="../meshes/coxa.dae" scale="0.001 0.001 0.001"/>
       </geometry>
@@ -131,9 +131,9 @@
   <joint name="joint_coxa_l1" type="revolute">
     <parent link="base" />
     <child link="coxa_l1" />
-    <origin rpy="3.14159 0 5.4977" xyz="0.17302 -0.10517 0" />
+    <origin rpy="3.14159 0 7.0684" xyz="0.17302 -0.10517 0" />
     <axis xyz="0 0 1"/>
-    <limit effort="25.0" lower="-3.14159" upper="3.14159" velocity="0.5"/>
+    <limit effort="80.0" lower="-3.14159" upper="3.14159" velocity="20.0"/>
   </joint>
 
   <link name="coxa_l2">
@@ -143,13 +143,13 @@
       <inertia ixx="0.00055" ixy="0" ixz="0" iyy="0.00124" iyz="0" izx="0" izz="0.00155"/>
     </inertial>
     <collision>
-      <origin rpy="0 0 3.14159" xyz="0 0 0" />
+      <origin rpy="0 0 4.71229" xyz="0 0 0" />
       <geometry>
         <mesh filename="../meshes/coxa.dae" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
     <visual>
-      <origin rpy="0 0 3.14159" xyz="0 0 0" />
+      <origin rpy="0 0 4.71229" xyz="0 0 0" />
       <geometry>
         <mesh filename="../meshes/coxa.dae" scale="0.001 0.001 0.001"/>
       </geometry>
@@ -159,9 +159,9 @@
   <joint name="joint_coxa_l2" type="revolute">
     <parent link="base" />
     <child link="coxa_l2" />
-    <origin rpy="3.14159 0 4.71229" xyz="0 -0.169 0" />
+    <origin rpy="3.14159 0 6.28299" xyz="0 -0.169 0" />
     <axis xyz="0 0 1"/>
-    <limit effort="25.0" lower="-3.14159" upper="3.14159" velocity="0.5"/>
+    <limit effort="80.0" lower="-3.14159" upper="3.14159" velocity="20.0"/>
   </joint>
 
   <link name="coxa_l3">
@@ -171,13 +171,13 @@
       <inertia ixx="0.00055" ixy="0" ixz="0" iyy="0.00124" iyz="0" izx="0" izz="0.00155"/>
     </inertial>
     <collision>
-      <origin rpy="0 0 3.14159" xyz="0 0 0" />
+      <origin rpy="0 0 4.71229" xyz="0 0 0" />
       <geometry>
         <mesh filename="../meshes/coxa.dae" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
     <visual>
-      <origin rpy="0 0 3.14159" xyz="0 0 0" />
+      <origin rpy="0 0 4.71229" xyz="0 0 0" />
       <geometry>
         <mesh filename="../meshes/coxa.dae" scale="0.001 0.001 0.001"/>
       </geometry>
@@ -187,9 +187,9 @@
   <joint name="joint_coxa_l3" type="revolute">
     <parent link="base" />
     <child link="coxa_l3" />
-    <origin rpy="3.14159 0 3.9269" xyz="-0.17302 -0.10517 0" />
+    <origin rpy="3.14159 0 5.4976" xyz="-0.17302 -0.10517 0" />
     <axis xyz="0 0 1"/>
-    <limit effort="25.0" lower="-3.14159" upper="3.14159" velocity="0.5"/>
+    <limit effort="80.0" lower="-3.14159" upper="3.14159" velocity="20.0"/>
   </joint>
 
   <link name="femur_r1">
@@ -215,9 +215,9 @@
   <joint name="joint_femur_r1" type="revolute">
     <parent link="coxa_r1" />
     <child link="femur_r1" />
-    <origin rpy="1.5707 0 0" xyz="0.09041 0 0" />
+    <origin rpy="1.5707 0 1.5707" xyz="0 0.09041 0" />
     <axis xyz="0 0 1"/>
-    <limit effort="25.0" lower="-3.14159" upper="3.14159" velocity="0.5"/>
+    <limit effort="80.0" lower="-3.14159" upper="3.14159" velocity="20.0"/>
   </joint>
 
   <link name="femur_r2">
@@ -243,9 +243,9 @@
   <joint name="joint_femur_r2" type="revolute">
     <parent link="coxa_r2" />
     <child link="femur_r2" />
-    <origin rpy="1.5707 0 0" xyz="0.09041 0 0" />
+    <origin rpy="1.5707 0 1.5707" xyz="0 0.09041 0" />
     <axis xyz="0 0 1"/>
-    <limit effort="25.0" lower="-3.14159" upper="3.14159" velocity="0.5"/>
+    <limit effort="80.0" lower="-3.14159" upper="3.14159" velocity="20.0"/>
   </joint>
 
   <link name="femur_r3">
@@ -271,9 +271,9 @@
   <joint name="joint_femur_r3" type="revolute">
     <parent link="coxa_r3" />
     <child link="femur_r3" />
-    <origin rpy="1.5707 0 0" xyz="0.09041 0 0" />
+    <origin rpy="1.5707 0 1.5707" xyz="0 0.09041 0" />
     <axis xyz="0 0 1"/>
-    <limit effort="25.0" lower="-3.14159" upper="3.14159" velocity="0.5"/>
+    <limit effort="80.0" lower="-3.14159" upper="3.14159" velocity="20.0"/>
   </joint>
 
   <link name="femur_l1">
@@ -299,9 +299,9 @@
   <joint name="joint_femur_l1" type="revolute">
     <parent link="coxa_l1" />
     <child link="femur_l1" />
-    <origin rpy="1.5707 0 0" xyz="0.09041 0 0" />
+    <origin rpy="1.5707 0 1.5707" xyz="0 0.09041 0" />
     <axis xyz="0 0 1"/>
-    <limit effort="25.0" lower="-3.14159" upper="3.14159" velocity="0.5"/>
+    <limit effort="80.0" lower="-3.14159" upper="3.14159" velocity="20.0"/>
   </joint>
 
   <link name="femur_l2">
@@ -327,11 +327,11 @@
   <joint name="joint_femur_l2" type="revolute">
     <parent link="coxa_l2" />
     <child link="femur_l2" />
-    <origin rpy="1.5707 0 0" xyz="0.09041 0 0" />
+    <origin rpy="1.5707 0 1.5707" xyz="0 0.09041 0" />
     <axis xyz="0 0 1"/>
-    <limit effort="25.0" lower="-3.14159" upper="3.14159" velocity="0.5"/>
+    <limit effort="80.0" lower="-3.14159" upper="3.14159" velocity="20.0"/>
   </joint>
-
+  
   <link name="femur_l3">
     <inertial>
       <mass value="0.92606" />
@@ -355,9 +355,9 @@
   <joint name="joint_femur_l3" type="revolute">
     <parent link="coxa_l3" />
     <child link="femur_l3" />
-    <origin rpy="1.5707 0 0" xyz="0.09041 0 0" />
+    <origin rpy="1.5707 0 1.5707" xyz="0 0.09041 0" />
     <axis xyz="0 0 1"/>
-    <limit effort="25.0" lower="-3.14159" upper="3.14159" velocity="0.5"/>
+    <limit effort="80.0" lower="-3.14159" upper="3.14159" velocity="20.0"/>
   </joint>
 
   <link name="tibia_r1">
@@ -366,12 +366,7 @@
       <origin rpy="0 0 0" xyz="0 0 0" />
       <inertia ixx="0.00097" ixy="0" ixz="0" iyy="0.00449" iyz="0" izx="0" izz="0.00383"/>
     </inertial>
-    <collision>
-      <origin rpy="1.5707 3.14159 0" xyz="0 0 0" />
-      <geometry>
-        <mesh filename="../meshes/tibia_3.dae" scale="0.001 0.001 0.001"/>
-      </geometry>
-    </collision>
+    
     <visual>
       <origin rpy="1.5707 3.14159 0" xyz="0 0 0" />
       <geometry>
@@ -385,7 +380,7 @@
     <child link="tibia_r1" />
     <origin rpy="0 0 0" xyz="0.220 0 0" />
     <axis xyz="0 0 1"/>
-    <limit effort="25.0" lower="-3.14159" upper="3.14159" velocity="0.5"/>
+    <limit effort="80.0" lower="-3.14159" upper="3.14159" velocity="20.0"/>
   </joint>
 
   <link name="tibia_r2">
@@ -394,12 +389,7 @@
       <origin rpy="0 0 0" xyz="0 0 0" />
       <inertia ixx="0.00097" ixy="0" ixz="0" iyy="0.00449" iyz="0" izx="0" izz="0.00383"/>
     </inertial>
-    <collision>
-      <origin rpy="1.5707 3.14159 0" xyz="0 0 0" />
-      <geometry>
-        <mesh filename="../meshes/tibia_3.dae" scale="0.001 0.001 0.001"/>
-      </geometry>
-    </collision>
+    
     <visual>
       <origin rpy="1.5707 3.14159 0" xyz="0 0 0" />
       <geometry>
@@ -413,7 +403,7 @@
     <child link="tibia_r2" />
     <origin rpy="0 0 0" xyz="0.220 0 0" />
     <axis xyz="0 0 1"/>
-    <limit effort="25.0" lower="-3.14159" upper="3.14159" velocity="0.5"/>
+    <limit effort="80.0" lower="-3.14159" upper="3.14159" velocity="20.0"/>
   </joint>
 
   <link name="tibia_r3">
@@ -422,12 +412,7 @@
       <origin rpy="0 0 0" xyz="0 0 0" />
       <inertia ixx="0.00097" ixy="0" ixz="0" iyy="0.00449" iyz="0" izx="0" izz="0.00383"/>
     </inertial>
-    <collision>
-      <origin rpy="1.5707 3.14159 0" xyz="0 0 0" />
-      <geometry>
-        <mesh filename="../meshes/tibia_3.dae" scale="0.001 0.001 0.001"/>
-      </geometry>
-    </collision>
+    
     <visual>
       <origin rpy="1.5707 3.14159 0" xyz="0 0 0" />
       <geometry>
@@ -441,7 +426,7 @@
     <child link="tibia_r3" />
     <origin rpy="0 0 0" xyz="0.220 0 0" />
     <axis xyz="0 0 1"/>
-    <limit effort="25.0" lower="-3.14159" upper="3.14159" velocity="0.5"/>
+    <limit effort="80.0" lower="-3.14159" upper="3.14159" velocity="20.0"/>
   </joint>
 
   <link name="tibia_l1">
@@ -450,12 +435,7 @@
       <origin rpy="0 0 0" xyz="0 0 0" />
       <inertia ixx="0.00097" ixy="0" ixz="0" iyy="0.00449" iyz="0" izx="0" izz="0.00383"/>
     </inertial>
-    <collision>
-      <origin rpy="1.5707 3.14159 0" xyz="0 0 0" />
-      <geometry>
-        <mesh filename="../meshes/tibia_3.dae" scale="0.001 0.001 0.001"/>
-      </geometry>
-    </collision>
+    
     <visual>
       <origin rpy="1.5707 3.14159 0" xyz="0 0 0" />
       <geometry>
@@ -469,7 +449,7 @@
     <child link="tibia_l1" />
     <origin rpy="0 0 0" xyz="0.220 0 0" />
     <axis xyz="0 0 1"/>
-    <limit effort="25.0" lower="-3.14159" upper="3.14159" velocity="0.5"/>
+    <limit effort="80.0" lower="-3.14159" upper="3.14159" velocity="20.0"/>
   </joint>
 
   <link name="tibia_l2">
@@ -478,12 +458,7 @@
       <origin rpy="0 0 0" xyz="0 0 0" />
       <inertia ixx="0.00097" ixy="0" ixz="0" iyy="0.00449" iyz="0" izx="0" izz="0.00383"/>
     </inertial>
-    <collision>
-      <origin rpy="1.5707 3.14159 0" xyz="0 0 0" />
-      <geometry>
-        <mesh filename="../meshes/tibia_3.dae" scale="0.001 0.001 0.001"/>
-      </geometry>
-    </collision>
+    
     <visual>
       <origin rpy="1.5707 3.14159 0" xyz="0 0 0" />
       <geometry>
@@ -497,7 +472,7 @@
     <child link="tibia_l2" />
     <origin rpy="0 0 0" xyz="0.220 0 0" />
     <axis xyz="0 0 1"/>
-    <limit effort="25.0" lower="-3.14159" upper="3.14159" velocity="0.5"/>
+    <limit effort="80.0" lower="-3.14159" upper="3.14159" velocity="20.0"/>
   </joint>
 
   <link name="tibia_l3">
@@ -506,12 +481,7 @@
       <origin rpy="0 0 0" xyz="0 0 0" />
       <inertia ixx="0.00097" ixy="0" ixz="0" iyy="0.00449" iyz="0" izx="0" izz="0.00383"/>
     </inertial>
-    <collision>
-      <origin rpy="1.5707 3.14159 0" xyz="0 0 0" />
-      <geometry>
-        <mesh filename="../meshes/tibia_3.dae" scale="0.001 0.001 0.001"/>
-      </geometry>
-    </collision>
+    
     <visual>
       <origin rpy="1.5707 3.14159 0" xyz="0 0 0" />
       <geometry>
@@ -525,21 +495,21 @@
     <child link="tibia_l3" />
     <origin rpy="0 0 0" xyz="0.220 0 0" />
     <axis xyz="0 0 1"/>
-    <limit effort="25.0" lower="-3.14159" upper="3.14159" velocity="0.5"/>
+    <limit effort="80.0" lower="-3.14159" upper="3.14159" velocity="20.0"/>
   </joint>
 
-  <link name="foot_r1">
+  <link name="r1_FOOT">
     <inertial>
       <mass value="1.15784" />
       <origin rpy="0 0 0" xyz="0 0 0" />
       <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.00124" iyz="0" izx="0" izz="0.00096"/>
     </inertial>
     <collision>
-      <origin rpy="0 3.14159 0" xyz="0 0 0" />
-      <geometry>
-        <mesh filename="../meshes/foot.dae" scale="0.001 0.001 0.001"/>
-      </geometry>
-    </collision>
+            <origin xyz="0 0 0.0225"/>
+            <geometry>
+                <sphere radius="0.03"/>
+            </geometry>
+        </collision>
     <visual>
       <origin rpy="0 3.14159 0" xyz="0 0 0" />
       <geometry>
@@ -548,152 +518,152 @@
     </visual>
   </link>
 
-  <joint name="joint_foot_r1" type="fixed">
+  <joint name="joint_r1_FOOT" type="fixed">
     <parent link="tibia_r1" />
-    <child link="foot_r1" />
+    <child link="r1_FOOT" />
     <origin rpy="1.5707 0 0" xyz="0.19859 0 0" />
-      <!-- <axis xyz="0 0 1"/>
-      <limit effort="25.0" lower="-3.14159" upper="3.14159" velocity="0.5"/> -->
-    </joint>
+    <!-- <axis xyz="0 0 1"/>
+    <limit effort="80.0" lower="-3.14159" upper="3.14159" velocity="20.0"/> -->
+  </joint>
 
-    <link name="foot_r2">
-      <inertial>
-        <mass value="1.15784" />
-        <origin rpy="0 0 0" xyz="0 0 0" />
-        <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.00124" iyz="0" izx="0" izz="0.00096"/>
-      </inertial>
-      <collision>
-        <origin rpy="0 3.14159 0" xyz="0 0 0" />
-        <geometry>
-          <mesh filename="../meshes/foot.dae" scale="0.001 0.001 0.001"/>
-        </geometry>
-      </collision>
-      <visual>
-        <origin rpy="0 3.14159 0" xyz="0 0 0" />
-        <geometry>
-          <mesh filename="../meshes/foot.dae" scale="0.001 0.001 0.001"/>
-        </geometry>
-      </visual>
-    </link>
-
-    <joint name="joint_foot_r2" type="fixed">
-      <parent link="tibia_r2" />
-      <child link="foot_r2" />
-      <origin rpy="1.5707 0 0" xyz="0.19859 0 0" />
-        <!-- <axis xyz="0 0 1"/>
-        <limit effort="25.0" lower="-3.14159" upper="3.14159" velocity="0.5"/> -->
-      </joint>
-
-      <link name="foot_r3">
-        <inertial>
-          <mass value="1.15784" />
-          <origin rpy="0 0 0" xyz="0 0 0" />
-          <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.00124" iyz="0" izx="0" izz="0.00096"/>
-        </inertial>
-        <collision>
-          <origin rpy="0 3.14159 0" xyz="0 0 0" />
-          <geometry>
-            <mesh filename="../meshes/foot.dae" scale="0.001 0.001 0.001"/>
-          </geometry>
+  <link name="r2_FOOT">
+    <inertial>
+      <mass value="1.15784" />
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.00124" iyz="0" izx="0" izz="0.00096"/>
+    </inertial>
+    <collision>
+            <origin xyz="0 0 0.0225"/>
+            <geometry>
+                <sphere radius="0.03"/>
+            </geometry>
         </collision>
-        <visual>
-          <origin rpy="0 3.14159 0" xyz="0 0 0" />
-          <geometry>
-            <mesh filename="../meshes/foot.dae" scale="0.001 0.001 0.001"/>
-          </geometry>
-        </visual>
-      </link>
+    <visual>
+      <origin rpy="0 3.14159 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/foot.dae" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
 
-      <joint name="joint_foot_r3" type="fixed">
-        <parent link="tibia_r3" />
-        <child link="foot_r3" />
-        <origin rpy="1.5707 0 0" xyz="0.19859 0 0" />
-          <!-- <axis xyz="0 0 1"/>
-          <limit effort="25.0" lower="-3.14159" upper="3.14159" velocity="0.5"/> -->
-        </joint>
+  <joint name="joint_r2_FOOT" type="fixed">
+    <parent link="tibia_r2" />
+    <child link="r2_FOOT" />
+    <origin rpy="1.5707 0 0" xyz="0.19859 0 0" />
+    <!-- <axis xyz="0 0 1"/>
+    <limit effort="80.0" lower="-3.14159" upper="3.14159" velocity="20.0"/> -->
+  </joint>
 
-        <link name="foot_l1">
-          <inertial>
-            <mass value="1.15784" />
-            <origin rpy="0 0 0" xyz="0 0 0" />
-            <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.00124" iyz="0" izx="0" izz="0.00096"/>
-          </inertial>
-          <collision>
-            <origin rpy="0 3.14159 0" xyz="0 0 0" />
+  <link name="r3_FOOT">
+    <inertial>
+      <mass value="1.15784" />
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.00124" iyz="0" izx="0" izz="0.00096"/>
+    </inertial>
+    <collision>
+            <origin xyz="0 0 0.0225"/>
             <geometry>
-              <mesh filename="../meshes/foot.dae" scale="0.001 0.001 0.001"/>
+                <sphere radius="0.03"/>
             </geometry>
-          </collision>
-          <visual>
-            <origin rpy="0 3.14159 0" xyz="0 0 0" />
+        </collision>
+    <visual>
+      <origin rpy="0 3.14159 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/foot.dae" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+
+  <joint name="joint_r3_FOOT" type="fixed">
+    <parent link="tibia_r3" />
+    <child link="r3_FOOT" />
+    <origin rpy="1.5707 0 0" xyz="0.19859 0 0" />
+    <!-- <axis xyz="0 0 1"/>
+    <limit effort="80.0" lower="-3.14159" upper="3.14159" velocity="20.0"/> -->
+  </joint>
+
+  <link name="l1_FOOT">
+    <inertial>
+      <mass value="1.15784" />
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.00124" iyz="0" izx="0" izz="0.00096"/>
+    </inertial>
+    <collision>
+            <origin xyz="0 0 0.0225"/>
             <geometry>
-              <mesh filename="../meshes/foot.dae" scale="0.001 0.001 0.001"/>
+                <sphere radius="0.03"/>
             </geometry>
-          </visual>
-        </link>
+        </collision>
+    <visual>
+      <origin rpy="0 3.14159 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/foot.dae" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
 
-        <joint name="joint_foot_l1" type="fixed">
-          <parent link="tibia_l1" />
-          <child link="foot_l1" />
-          <origin rpy="1.5707 0 0" xyz="0.19859 0 0" />
-            <!-- <axis xyz="0 0 1"/>
-            <limit effort="25.0" lower="-3.14159" upper="3.14159" velocity="0.5"/> -->
-          </joint>
+  <joint name="joint_l1_FOOT" type="fixed">
+    <parent link="tibia_l1" />
+    <child link="l1_FOOT" />
+    <origin rpy="1.5707 0 0" xyz="0.19859 0 0" />
+    <!-- <axis xyz="0 0 1"/>
+    <limit effort="80.0" lower="-3.14159" upper="3.14159" velocity="20.0"/> -->
+  </joint>
 
-          <link name="foot_l2">
-            <inertial>
-              <mass value="1.15784" />
-              <origin rpy="0 0 0" xyz="0 0 0" />
-              <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.00124" iyz="0" izx="0" izz="0.00096"/>
-            </inertial>
-            <collision>
-              <origin rpy="0 3.14159 0" xyz="0 0 0" />
-              <geometry>
-                <mesh filename="../meshes/foot.dae" scale="0.001 0.001 0.001"/>
-              </geometry>
-            </collision>
-            <visual>
-              <origin rpy="0 3.14159 0" xyz="0 0 0" />
-              <geometry>
-                <mesh filename="../meshes/foot.dae" scale="0.001 0.001 0.001"/>
-              </geometry>
-            </visual>
-          </link>
+  <link name="l2_FOOT">
+    <inertial>
+      <mass value="1.15784" />
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.00124" iyz="0" izx="0" izz="0.00096"/>
+    </inertial>
+    <collision>
+            <origin xyz="0 0 0.0225"/>
+            <geometry>
+                <sphere radius="0.03"/>
+            </geometry>
+        </collision>
+    <visual>
+      <origin rpy="0 3.14159 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/foot.dae" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
 
-          <joint name="joint_foot_l2" type="fixed">
-            <parent link="tibia_l2" />
-            <child link="foot_l2" />
-            <origin rpy="1.5707 0 0" xyz="0.19859 0 0" />
-              <!-- <axis xyz="0 0 1"/>
-              <limit effort="25.0" lower="-3.14159" upper="3.14159" velocity="0.5"/> -->
-            </joint>
+  <joint name="joint_l2_FOOT" type="fixed">
+    <parent link="tibia_l2" />
+    <child link="l2_FOOT" />
+    <origin rpy="1.5707 0 0" xyz="0.19859 0 0" />
+    <!-- <axis xyz="0 0 1"/>
+    <limit effort="80.0" lower="-3.14159" upper="3.14159" velocity="20.0"/> -->
+  </joint>
 
-            <link name="foot_l3">
-              <inertial>
-                <mass value="1.15784" />
-                <origin rpy="0 0 0" xyz="0 0 0" />
-                <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.00124" iyz="0" izx="0" izz="0.00096"/>
-              </inertial>
-              <collision>
-                <origin rpy="0 3.14159 0" xyz="0 0 0" />
-                <geometry>
-                  <mesh filename="../meshes/foot.dae" scale="0.001 0.001 0.001"/>
-                </geometry>
-              </collision>
-              <visual>
-                <origin rpy="0 3.14159 0" xyz="0 0 0" />
-                <geometry>
-                  <mesh filename="../meshes/foot.dae" scale="0.001 0.001 0.001"/>
-                </geometry>
-              </visual>
-            </link>
+  <link name="l3_FOOT">
+    <inertial>
+      <mass value="1.15784" />
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.00124" iyz="0" izx="0" izz="0.00096"/>
+    </inertial>
+    <collision>
+            <origin xyz="0 0 0.0225"/>
+            <geometry>
+                <sphere radius="0.03"/>
+            </geometry>
+        </collision>
+    <visual>
+      <origin rpy="0 3.14159 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/foot.dae" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
 
-            <joint name="joint_foot_l3" type="fixed">
-              <parent link="tibia_l3" />
-              <child link="foot_l3" />
-              <origin rpy="1.5707 0 0" xyz="0.19859 0 0" />
-                <!-- <axis xyz="0 0 1"/>
-                <limit effort="25.0" lower="-3.14159" upper="3.14159" velocity="0.5"/> -->
-              </joint>
+  <joint name="joint_l3_FOOT" type="fixed">
+    <parent link="tibia_l3" />
+    <child link="l3_FOOT" />
+    <origin rpy="1.5707 0 0" xyz="0.19859 0 0" />
+    <!-- <axis xyz="0 0 1"/>
+    <limit effort="80.0" lower="-3.14159" upper="3.14159" velocity="20.0"/> -->
+  </joint>
 
-            </robot>
+</robot>

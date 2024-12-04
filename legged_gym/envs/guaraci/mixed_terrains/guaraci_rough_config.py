@@ -34,12 +34,13 @@ class GuaraciRoughCfg( LeggedRobotCfg ):
     class env( LeggedRobotCfg.env ):
         num_envs = 4096
         num_actions = 18
+        num_observations = 253
 
     class terrain( LeggedRobotCfg.terrain ):
         mesh_type = 'trimesh'
 
     class init_state( LeggedRobotCfg.init_state ):
-        pos = [0.0, 0.0, 0.2] # x,y,z [m]
+        pos = [0.0, 0.0, 0.6] # x,y,z [m]
         default_joint_angles = { # = target angles [rad] when action = 0.0
             "joint_coxa_r1": 0.0,
             "joint_coxa_r2": 0.0,
@@ -65,33 +66,34 @@ class GuaraciRoughCfg( LeggedRobotCfg ):
 
     class control( LeggedRobotCfg.control ):
         # PD Drive parameters:
-        stiffness = {'coxa': 80., 'femur': 80., 'tibia': 80.}  # [N*m/rad]
-        damping = {'coxa': 2., 'femur': 2., 'tibia': 2.}     # [N*m*s/rad]
+        stiffness = {'coxa': 40., 'femur': 40, 'tibia': 40}  # [N*m/rad]
+        damping = {'coxa': 3., 'femur': 3., 'tibia': 3.}     # [N*m*s/rad]
         # action scale: target angle = actionScale * action + defaultAngle
         action_scale = 0.5
         # decimation: Number of control action updates @ sim DT per policy DT
         decimation = 4
-        use_actuator_network = True
-        actuator_net_file = "{LEGGED_GYM_ROOT_DIR}/resources/actuator_nets/anydrive_v3_lstm.pt"
+        use_actuator_network = False
+        # actuator_net_file = "{LEGGED_GYM_ROOT_DIR}/resources/actuator_nets/anydrive_v3_lstm.pt"
 
     class asset( LeggedRobotCfg.asset ):
         file = "{LEGGED_GYM_ROOT_DIR}/resources/robots/guaraci/urdf/guaraci.urdf"
         name = "guaraci"
-        foot_name = "foot"
-        penalize_contacts_on = ["femur", "tibia"]
+        foot_name = "FOOT"
+        penalize_contacts_on = ["femur"]
         terminate_after_contacts_on = ["base"]
         self_collisions = 1 # 1 to disable, 0 to enable...bitwise filter
 
     class domain_rand( LeggedRobotCfg.domain_rand):
-        randomize_base_mass = True
+        randomize_base_mass = False
         added_mass_range = [-5., 5.]
   
     class rewards( LeggedRobotCfg.rewards ):
-        base_height_target = 0.2
-        max_contact_force = 300.
+        base_height_target = 0.4
+        max_contact_force = 600.
         only_positive_rewards = True
         class scales( LeggedRobotCfg.rewards.scales ):
-            pass
+            base_height = -1.2
+            feet_air_time = 4.
 
 class GuaraciRoughCfgPPO( LeggedRobotCfgPPO ):
     class runner( LeggedRobotCfgPPO.runner ):
