@@ -18,15 +18,15 @@
       </geometry>
     </collision>
     <inertial>
-      <mass value="9.42278" />
+      <mass value="16.2" />
       <origin rpy="0 0 0" xyz="3.073e-05 0.0 2.577e-05" />
       <inertia ixx="0.05235" ixy="0" ixz="0" iyy="0.08538" iyz="0" izx="0" izz="0.1338"/>
     </inertial>
   </link>
-
+  
   <link name="coxa_r1">
     <inertial>
-      <mass value="0.59759" />
+      <mass value="1.655" />
       <origin rpy="0 0 0" xyz="0 0 -3.357e-05" />
       <inertia ixx="0.00055" ixy="0" ixz="0" iyy="0.00124" iyz="0" izx="0" izz="0.00155"/>
     </inertial>
@@ -54,7 +54,7 @@
 
   <link name="coxa_r2">
     <inertial>
-      <mass value="0.59759" />
+      <mass value="1.655" />
       <origin rpy="0 0 0" xyz="0 0 -3.357e-05" />
       <inertia ixx="0.00055" ixy="0" ixz="0" iyy="0.00124" iyz="0" izx="0" izz="0.00155"/>
     </inertial>
@@ -82,7 +82,7 @@
 
   <link name="coxa_r3">
     <inertial>
-      <mass value="0.59759" />
+      <mass value="1.655" />
       <origin rpy="0 0 0" xyz="0 0 -3.357e-05" />
       <inertia ixx="0.00055" ixy="0" ixz="0" iyy="0.00124" iyz="0" izx="0" izz="0.00155"/>
     </inertial>
@@ -110,7 +110,7 @@
 
   <link name="coxa_l1">
     <inertial>
-      <mass value="0.59759" />
+      <mass value="1.655" />
       <origin rpy="0 0 0" xyz="0 0 -3.357e-05" />
       <inertia ixx="0.00055" ixy="0" ixz="0" iyy="0.00124" iyz="0" izx="0" izz="0.00155"/>
     </inertial>
@@ -138,7 +138,7 @@
 
   <link name="coxa_l2">
     <inertial>
-      <mass value="0.59759" />
+      <mass value="1.655" />
       <origin rpy="0 0 0" xyz="0 0 -3.357e-05" />
       <inertia ixx="0.00055" ixy="0" ixz="0" iyy="0.00124" iyz="0" izx="0" izz="0.00155"/>
     </inertial>
@@ -166,7 +166,7 @@
 
   <link name="coxa_l3">
     <inertial>
-      <mass value="0.59759" />
+      <mass value="1.655" />
       <origin rpy="0 0 0" xyz="0 0 -3.357e-05" />
       <inertia ixx="0.00055" ixy="0" ixz="0" iyy="0.00124" iyz="0" izx="0" izz="0.00155"/>
     </inertial>
@@ -362,7 +362,7 @@
 
   <link name="tibia_r1">
     <inertial>
-      <mass value="0.71403" />
+      <mass value="1.455" />
       <origin rpy="0 0 0" xyz="0 0 0" />
       <inertia ixx="0.00097" ixy="0" ixz="0" iyy="0.00449" iyz="0" izx="0" izz="0.00383"/>
     </inertial>
@@ -370,7 +370,7 @@
     <visual>
       <origin rpy="1.5707 3.14159 0" xyz="0 0 0" />
       <geometry>
-        <mesh filename="../meshes/tibia_3.dae" scale="0.001 0.001 0.001"/>
+        <mesh filename="../meshes/tibia_393.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </visual>
   </link>
@@ -385,7 +385,7 @@
 
   <link name="tibia_r2">
     <inertial>
-      <mass value="0.71403" />
+      <mass value="1.455" />
       <origin rpy="0 0 0" xyz="0 0 0" />
       <inertia ixx="0.00097" ixy="0" ixz="0" iyy="0.00449" iyz="0" izx="0" izz="0.00383"/>
     </inertial>
@@ -393,7 +393,7 @@
     <visual>
       <origin rpy="1.5707 3.14159 0" xyz="0 0 0" />
       <geometry>
-        <mesh filename="../meshes/tibia_3.dae" scale="0.001 0.001 0.001"/>
+        <mesh filename="../meshes/tibia_393.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </visual>
   </link>
@@ -408,7 +408,7 @@
 
   <link name="tibia_r3">
     <inertial>
-      <mass value="0.71403" />
+      <mass value="1.455" />
       <origin rpy="0 0 0" xyz="0 0 0" />
       <inertia ixx="0.00097" ixy="0" ixz="0" iyy="0.00449" iyz="0" izx="0" izz="0.00383"/>
     </inertial>
@@ -416,7 +416,7 @@
     <visual>
       <origin rpy="1.5707 3.14159 0" xyz="0 0 0" />
       <geometry>
-        <mesh filename="../meshes/tibia_3.dae" scale="0.001 0.001 0.001"/>
+        <mesh filename="../meshes/tibia_393.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </visual>
   </link>
@@ -431,7 +431,7 @@
 
   <link name="tibia_l1">
     <inertial>
-      <mass value="0.71403" />
+      <mass value="1.455" />
       <origin rpy="0 0 0" xyz="0 0 0" />
       <inertia ixx="0.00097" ixy="0" ixz="0" iyy="0.00449" iyz="0" izx="0" izz="0.00383"/>
     </inertial>
@@ -439,7 +439,7 @@
     <visual>
       <origin rpy="1.5707 3.14159 0" xyz="0 0 0" />
       <geometry>
-        <mesh filename="../meshes/tibia_3.dae" scale="0.001 0.001 0.001"/>
+        <mesh filename="../meshes/tibia_393.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </visual>
   </link>
@@ -454,7 +454,7 @@
 
   <link name="tibia_l2">
     <inertial>
-      <mass value="0.71403" />
+      <mass value="1.455" />
       <origin rpy="0 0 0" xyz="0 0 0" />
       <inertia ixx="0.00097" ixy="0" ixz="0" iyy="0.00449" iyz="0" izx="0" izz="0.00383"/>
     </inertial>
@@ -462,7 +462,7 @@
     <visual>
       <origin rpy="1.5707 3.14159 0" xyz="0 0 0" />
       <geometry>
-        <mesh filename="../meshes/tibia_3.dae" scale="0.001 0.001 0.001"/>
+        <mesh filename="../meshes/tibia_393.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </visual>
   </link>
@@ -477,7 +477,7 @@
 
   <link name="tibia_l3">
     <inertial>
-      <mass value="0.71403" />
+      <mass value="1.455" />
       <origin rpy="0 0 0" xyz="0 0 0" />
       <inertia ixx="0.00097" ixy="0" ixz="0" iyy="0.00449" iyz="0" izx="0" izz="0.00383"/>
     </inertial>
@@ -485,7 +485,7 @@
     <visual>
       <origin rpy="1.5707 3.14159 0" xyz="0 0 0" />
       <geometry>
-        <mesh filename="../meshes/tibia_3.dae" scale="0.001 0.001 0.001"/>
+        <mesh filename="../meshes/tibia_393.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </visual>
   </link>
@@ -500,7 +500,7 @@
 
   <link name="r1_FOOT">
     <inertial>
-      <mass value="1.15784" />
+      <mass value="0.2" />
       <origin rpy="0 0 0" xyz="0 0 0" />
       <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.00124" iyz="0" izx="0" izz="0.00096"/>
     </inertial>
@@ -521,14 +521,14 @@
   <joint name="joint_r1_FOOT" type="fixed">
     <parent link="tibia_r1" />
     <child link="r1_FOOT" />
-    <origin rpy="1.5707 0 0" xyz="0.19859 0 0" />
+    <origin rpy="1.5707 0 0" xyz="0.36734 0 0" />
     <!-- <axis xyz="0 0 1"/>
     <limit effort="80.0" lower="-3.14159" upper="3.14159" velocity="20.0"/> -->
   </joint>
 
   <link name="r2_FOOT">
     <inertial>
-      <mass value="1.15784" />
+      <mass value="0.2" />
       <origin rpy="0 0 0" xyz="0 0 0" />
       <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.00124" iyz="0" izx="0" izz="0.00096"/>
     </inertial>
@@ -549,14 +549,14 @@
   <joint name="joint_r2_FOOT" type="fixed">
     <parent link="tibia_r2" />
     <child link="r2_FOOT" />
-    <origin rpy="1.5707 0 0" xyz="0.19859 0 0" />
+    <origin rpy="1.5707 0 0" xyz="0.36734 0 0" />
     <!-- <axis xyz="0 0 1"/>
     <limit effort="80.0" lower="-3.14159" upper="3.14159" velocity="20.0"/> -->
   </joint>
 
   <link name="r3_FOOT">
     <inertial>
-      <mass value="1.15784" />
+      <mass value="0.2" />
       <origin rpy="0 0 0" xyz="0 0 0" />
       <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.00124" iyz="0" izx="0" izz="0.00096"/>
     </inertial>
@@ -577,14 +577,14 @@
   <joint name="joint_r3_FOOT" type="fixed">
     <parent link="tibia_r3" />
     <child link="r3_FOOT" />
-    <origin rpy="1.5707 0 0" xyz="0.19859 0 0" />
+    <origin rpy="1.5707 0 0" xyz="0.36734 0 0" />
     <!-- <axis xyz="0 0 1"/>
     <limit effort="80.0" lower="-3.14159" upper="3.14159" velocity="20.0"/> -->
   </joint>
 
   <link name="l1_FOOT">
     <inertial>
-      <mass value="1.15784" />
+      <mass value="0.2" />
       <origin rpy="0 0 0" xyz="0 0 0" />
       <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.00124" iyz="0" izx="0" izz="0.00096"/>
     </inertial>
@@ -605,14 +605,14 @@
   <joint name="joint_l1_FOOT" type="fixed">
     <parent link="tibia_l1" />
     <child link="l1_FOOT" />
-    <origin rpy="1.5707 0 0" xyz="0.19859 0 0" />
+    <origin rpy="1.5707 0 0" xyz="0.36734 0 0" />
     <!-- <axis xyz="0 0 1"/>
     <limit effort="80.0" lower="-3.14159" upper="3.14159" velocity="20.0"/> -->
   </joint>
 
   <link name="l2_FOOT">
     <inertial>
-      <mass value="1.15784" />
+      <mass value="0.2" />
       <origin rpy="0 0 0" xyz="0 0 0" />
       <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.00124" iyz="0" izx="0" izz="0.00096"/>
     </inertial>
@@ -633,14 +633,14 @@
   <joint name="joint_l2_FOOT" type="fixed">
     <parent link="tibia_l2" />
     <child link="l2_FOOT" />
-    <origin rpy="1.5707 0 0" xyz="0.19859 0 0" />
+    <origin rpy="1.5707 0 0" xyz="0.36734 0 0" />
     <!-- <axis xyz="0 0 1"/>
     <limit effort="80.0" lower="-3.14159" upper="3.14159" velocity="20.0"/> -->
   </joint>
 
   <link name="l3_FOOT">
     <inertial>
-      <mass value="1.15784" />
+      <mass value="0.2" />
       <origin rpy="0 0 0" xyz="0 0 0" />
       <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.00124" iyz="0" izx="0" izz="0.00096"/>
     </inertial>
@@ -661,7 +661,7 @@
   <joint name="joint_l3_FOOT" type="fixed">
     <parent link="tibia_l3" />
     <child link="l3_FOOT" />
-    <origin rpy="1.5707 0 0" xyz="0.19859 0 0" />
+    <origin rpy="1.5707 0 0" xyz="0.36734 0 0" />
     <!-- <axis xyz="0 0 1"/>
     <limit effort="80.0" lower="-3.14159" upper="3.14159" velocity="20.0"/> -->
   </joint>
